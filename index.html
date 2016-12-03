@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Greetings</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Doppio+One|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+
+<div>
+    <br><br><br><br><br>
+<img class="img-port" src="self.jpg" alt="selfie" class="columns small-13 large-13" align="center" />
+</div>
+
+<section>
+  <h2>Hello, <span id="greeting">hello!</span></h2>
+</section>
+
+    <script language="JavaScript">
+    var myDate = new Date();
+    /* hour is before noon */
+    if ( myDate.getHours() < 12 )
+    {
+        document.getElementById('greeting').innerHTML = "good Morning!";
+    }
+    else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+    if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+    {
+        document.getElementById('greeting').innerHTML = "good afternoon!";
+    }
+    else  /* the hour is after 5pm, so it is between 6pm and midnight */
+    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+    {
+       document.getElementById('greeting').innerHTML = "good evening!";
+    }
+    else  /* the hour is not between 0 and 24, so something is wrong */
+    {
+        document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+    }
+    </script>
+
+
+
+    <div>
+
+      <section class="row">
+
+        <h5 class="columns small-12 large-12">Created by: Katrina Cordea</h5>
+
+
+      </section><br>
+
+    </div>
+
+    <div class="row small-up-2 medium-up-3 large-up-4">
+      <div class="column">
+        <img class="thumbnail" src="market.jpg"><a href="http://ada.csueastbay.edu/~bg4276/WA-Group1%20Project-FD/index.html">Web Redesign</a>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

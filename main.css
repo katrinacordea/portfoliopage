@@ -1,0 +1,41 @@
+@media screen and (min-width:0px) and (max-width:640px) {
+  /* CSS code for small screens */
+}
+@media screen and (min-width:641px) {
+  /* CSS code for larger screens */
+}
+
+@import url(app.css);
+@import url(foundation.css);
+
+body {
+  color: #547ca0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Prata', serif;
+  font-family: 'Doppio One', sans-serif;
+}
+
+h5 {
+  color: #547ca0;
+  font-family: 'Prata', sans-serif;
+  font-family: 'Prata', sans-serif;
+}
+
+div {
+  width: 50%;
+  margin: 0px auto 0px auto
+}
+
+.img-port {
+  height: 160px;
+  width: 160px;
+  -moz-border-radius: 90px;
+  border-radius: 90px;
+}
+
+#greeting{color:#547ca0;}
